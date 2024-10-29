@@ -14,7 +14,7 @@ It relies on Server Silos to access the KsecDD driver directly, without having t
 > [!WARNING]
 > This PoC can only be executed **4 times**, before crashing the kernel!
 
-Due to the way the IOCTL `IOCTL_KSEC_IPC_SET_FUNCTION_RETURN` is handled by the KsecDD driver, this PoC can only be used 4 times. At the 5th execution, the driver will attempt to free the user-supplied buffer as if it were allocated in a kernel pool. This operation is invalid, and therefore will cause a Bug Check, *a.k.a.* a Blue Screen. To run the exploit without crashing the kernel, a machine reboot will be required.
+Due to the way the IOCTL `IOCTL_KSEC_IPC_SET_FUNCTION_RETURN` is handled by the KsecDD driver, this PoC can only be used 4 times. At the 5th execution, the driver will attempt to free the user-supplied buffer as if it were allocated in a kernel pool. This operation is invalid, and therefore will cause a Bug Check, *a.k.a.* a Blue Screen. To run the exploit again, without crashing the kernel, a machine reboot will be required.
 
 ## Usage
 
@@ -82,4 +82,4 @@ All done.
 - James Forshaw ([@tiraniddo](https://infosec.exchange/@tiraniddo)) - [NtObjectManager](https://github.com/googleprojectzero/sandbox-attacksurface-analysis-tools)
 - Lucas Di Martino - [Reversing Windows Container, episode I: Silo](https://blog.quarkslab.com/reversing-windows-container-episode-i-silo.html)
 - Lucas Di Martino - [Reversing Windows Container, episode II: Silo to Server Silo](https://blog.quarkslab.com/reversing-windows-container-part-ii-silo-to-server-silo.html)
-- Axel Souchet - [@0vercl0k](https://twitter.com/0vercl0k) - [rp++](https://github.com/0vercl0k/rp)
+- Axel Souchet ([@0vercl0k](https://twitter.com/0vercl0k)) - [rp++](https://github.com/0vercl0k/rp)
