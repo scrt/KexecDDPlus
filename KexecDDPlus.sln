@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.11.35222.181
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "KexecDDPlus", "KexecDDPlus\KexecDDPlus.vcxproj", "{F59FED04-9631-49CC-9F73-2DE2478A8EED}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Common", "Common\Common.vcxproj", "{778EB295-BF7A-4ECB-889F-BA23A8FC409A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F59FED04-9631-49CC-9F73-2DE2478A8EED}.Debug|x64.ActiveCfg = Debug|x64
+		{F59FED04-9631-49CC-9F73-2DE2478A8EED}.Debug|x64.Build.0 = Debug|x64
+		{F59FED04-9631-49CC-9F73-2DE2478A8EED}.Release|x64.ActiveCfg = Release|x64
+		{F59FED04-9631-49CC-9F73-2DE2478A8EED}.Release|x64.Build.0 = Release|x64
+		{778EB295-BF7A-4ECB-889F-BA23A8FC409A}.Debug|x64.ActiveCfg = Debug|x64
+		{778EB295-BF7A-4ECB-889F-BA23A8FC409A}.Debug|x64.Build.0 = Debug|x64
+		{778EB295-BF7A-4ECB-889F-BA23A8FC409A}.Release|x64.ActiveCfg = Release|x64
+		{778EB295-BF7A-4ECB-889F-BA23A8FC409A}.Release|x64.Build.0 = Release|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {5772D6F4-B5B5-4DE3-B603-38A661F73CB3}
+	EndGlobalSection
+EndGlobal
