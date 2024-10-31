@@ -7,11 +7,14 @@ It relies on Server Silos to access the KsecDD driver directly, without having t
 **Tested on:**
 
 - Windows 11 23H2 (OS Build 22631.4317)
+- Windows 11 23H2 (OS Build 22631.3380)
+- Windows 10 22H2 (OS Build 19045.5011)
 - Windows 10 22H2 (OS Build 19045.4894)
+
 
 ## Disclaimer
 
-> [!WARNING]
+> [!CAUTION]
 > This PoC can only be executed **4 times**, before crashing the kernel!
 
 Due to the way the IOCTL `IOCTL_KSEC_IPC_SET_FUNCTION_RETURN` is handled by the KsecDD driver, this PoC can only be used 4 times. At the 5th execution, the driver will attempt to free the user-supplied buffer as if it were allocated in a kernel pool. This operation is invalid, and therefore will cause a Bug Check, *a.k.a.* a Blue Screen. To run the exploit again, without crashing the kernel, a machine reboot will be required.
