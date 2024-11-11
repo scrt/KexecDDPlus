@@ -4,13 +4,14 @@ This proof-of-concept is the result of a research project that aimed at extendin
 
 It relies on Server Silos to access the KsecDD driver directly, without having to inject code into LSASS. This capability therefore allows it to operate even on systems on which LSA Protection is enabled.
 
+For more information, please check out our blog post [Exploiting KsecDD through Server Silos](https://blog.scrt.ch/2024/11/11/exploiting-ksecdd-through-server-silos/), and the links in the [Credits](#credits) section.
+
 **Tested on:**
 
 - Windows 11 23H2 (OS Build 22631.4317)
 - Windows 11 23H2 (OS Build 22631.3380)
 - Windows 10 22H2 (OS Build 19045.5011)
 - Windows 10 22H2 (OS Build 19045.4894)
-
 
 ## Disclaimer
 
@@ -78,7 +79,7 @@ All done.
     - Mastodon: [https://infosec.exchange/@pmain](https://infosec.exchange/@pmain)
     - GitHub: [https://github.com/PMain](https://github.com/PMain)
 
-## Credit
+## Credits
 
 - [@floesen_](https://x.com/floesen_) - [KExecDD](https://github.com/floesen/KExecDD)
 - Claudio Contin - [LSASS rings KsecDD ext. 0](https://tierzerosecurity.co.nz/2024/04/29/kexecdd.html)
